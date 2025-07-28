@@ -1,5 +1,4 @@
 function startApp() {
-  // ===== Part 1: Login & Access Control =====
   let username = prompt("Enter your username (admin or user):");
   let password = prompt("Enter your password:");
 
@@ -13,7 +12,6 @@ function startApp() {
     return;
   }
 
-  // ===== Part 2: Coffee Order =====
   let customerName = prompt("What's your name?");
   let age = parseInt(prompt("How old are you?"));
 
@@ -62,7 +60,7 @@ function startApp() {
     "Final total: $" + finalTotal.toFixed(2)
   );
 
-  // ===== Part 3: Bill Splitter with Tip =====
+
   let splitCount = parseInt(prompt("How many people are splitting the bill? (1, 2, or 3)"));
   if (![1, 2, 3].includes(splitCount)) {
     alert("Invalid number of people! Please enter 1, 2, or 3.");
